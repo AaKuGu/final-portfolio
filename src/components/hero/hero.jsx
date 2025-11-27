@@ -15,7 +15,7 @@ export function Hero({ setActiveSection }) {
     <motion.section
       className="min-h-screen  flex items-center justify-center px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-20 sm:pb-0 "
       style={{
-        backgroundImage: `radial-gradient(circle at 0.5px 0.5px, rgba(45, 154, 174, 0.2) 2px, transparent 0)`,
+        backgroundImage: `radial-gradient(circle at 0.5px 0.5px, rgba(85, 158, 171, 0.2) 2px, transparent 0)`,
         backgroundSize: "20px 20px",
         backgroundRepeat: "repeat",
       }}
@@ -24,7 +24,7 @@ export function Hero({ setActiveSection }) {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-6xl  w-fit "
+        className="max-w-6xl  w-fit"
       >
         <Intro />
 

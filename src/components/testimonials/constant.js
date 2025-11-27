@@ -6,6 +6,7 @@ export const testimonials = [
     role: "Founder",
     company: "Aqua Jungle Waterpark",
     image: "/wp-profile.png",
+    videoUrl: "https://youtube.com/shorts/JGOqNpeV4NU?feature=share",
   },
   {
     quote:
@@ -14,5 +15,14 @@ export const testimonials = [
     role: "Owner",
     company: "Bhaiya Ji Cosmetics",
     image: "/kb-profile.png",
+  },
+  {
+    quote:
+      "Ready to launch your course in the next 60 seconds? With this software, you can go live instantly — in just three simple steps.",
+    author: "Musafikurrahman",
+    role: "Affiliate Marketer",
+    company: "musafikurrahman",
+    image: "/musafikurrahman.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=MmYzuBj7JgI",
   },
 ];

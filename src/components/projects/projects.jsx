@@ -7,7 +7,7 @@ import { projects } from "./constant";
 import { containerVariants, itemVariants } from "./motion-variants";
 import Header from "./Header";
 
-export function Projects() {
+export function Projects({ setActiveSection }) {
   return (
     <section
       style={{
@@ -44,9 +44,60 @@ export function Projects() {
 
                 <div className="p-5 sm:p-6 md:p-8 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 group-hover:text-cyan-500 transition-colors">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 group-hover:text-cyan-500 transition-colors">
                       {project.title}
                     </h3>
+                    <motion.div variants={itemVariants} className="mb-3">
+                      <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-cyan-800/50 text-cyan-500 text-xs sm:text-sm font-medium border border-cyan-300">
+                        As {project.type}
+                      </span>
+                    </motion.div>
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-[5px] md:mb-2">
+                      {project.testimonialUrl && (
+                        <Button
+                          asChild
+                          className="flex-1 text-sm sm:text-base"
+                          variant="secondary"
+                          onClick={() => setActiveSection("testimonials")}
+                        >
+                          <div className={`cursor-pointer`}>
+                            <ExternalLink className="mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                            Testimonial
+                          </div>
+                        </Button>
+                      )}
+                      {project.demoUrl && (
+                        <Button
+                          asChild
+                          className="flex-1 text-sm sm:text-base border-white border-[1px]"
+                        >
+                          <a
+                            href={project.demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                            Demo Video
+                          </a>
+                        </Button>
+                      )}
+                      {project.websiteUrl && (
+                        <Button
+                          asChild
+                          className="flex-1 text-sm sm:text-base bg-cyan-500 text-black border hover:bg-cyan-500"
+                          // variant="outline"
+                        >
+                          <a
+                            href={project.websiteUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                            Live Link
+                          </a>
+                        </Button>
+                      )}
+                    </div>
                     <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
                       {project.description}
                     </p>
@@ -77,53 +128,6 @@ export function Projects() {
                         </div>
                       ))}
                     </div>
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-                    {project.demoUrl && (
-                      <Button asChild className="flex-1 text-sm sm:text-base">
-                        <a
-                          href={project.demoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                          Demo Video
-                        </a>
-                      </Button>
-                    )}
-                    {project.websiteUrl && (
-                      <Button
-                        asChild
-                        className="flex-1 text-sm sm:text-base bg-cyan-500 text-black border hover:bg-cyan-500"
-                        // variant="outline"
-                      >
-                        <a
-                          href={project.websiteUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                          Website
-                        </a>
-                      </Button>
-                    )}
-                    {project.testimonialUrl && (
-                      <Button
-                        asChild
-                        className="flex-1 text-sm sm:text-base"
-                        variant="secondary"
-                      >
-                        <a
-                          href={project.testimonialUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <ExternalLink className="mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                          Testimonial
-                        </a>
-                      </Button>
-                    )}
                   </div>
                 </div>
               </div>

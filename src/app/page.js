@@ -40,7 +40,7 @@ export default function Portfolio() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Projects />
+              <Projects setActiveSection={setActiveSection} />
             </motion.div>
           )}
 
