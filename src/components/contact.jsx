@@ -49,7 +49,14 @@ const itemVariants = {
 
 export function Contact() {
   return (
-    <section className="min-h-screen flex items-center justify-center py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-24 sm:pb-20">
+    <section
+      style={{
+        backgroundImage: `radial-gradient(circle at 0.5px 0.5px, rgba(45, 154, 174, 0.2) 2px, transparent 0)`,
+        backgroundSize: "20px 20px",
+        backgroundRepeat: "repeat",
+      }}
+      className="min-h-screen flex items-center justify-center py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-24 sm:pb-20"
+    >
       <div className="max-w-5xl w-full">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

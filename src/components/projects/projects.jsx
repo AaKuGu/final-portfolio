@@ -9,7 +9,12 @@ import Header from "./Header";
 
 export function Projects() {
   return (
-    <section className="min-h-screen py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-24 sm:pb-20">
+    <section
+      style={{
+        backgroundImage: `radial-gradient(circle at 1px 1px, #022937ff, #000000ff)`,
+      }}
+      className="min-h-screen py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-24 sm:pb-20"
+    >
       <Header />
       <motion.div
         variants={containerVariants}

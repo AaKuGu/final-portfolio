@@ -94,7 +94,7 @@ const Tech_Stack = () => {
             className="relative px-3 py-1.5 sm:px-4 sm:py-2 bg-gray-900 rounded-lg text-xs sm:text-sm font-medium border border-gray-600 hover:border-gray-600/50 transition-colors"
           >
             <span
-              className={`absolute inset-x-0 bottom-[-1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-[2px] w-3/4 mx-auto`}
+              className={`absolute inset-x-0 bottom-[-1.5px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-[2px] w-3/4 mx-auto`}
             ></span>
             {skill}
           </motion.span>

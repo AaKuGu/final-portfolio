@@ -9,7 +9,12 @@ import Footer from "./Footer";
 
 export function Testimonials() {
   return (
-    <section className="min-h-screen py-6 sm:py-8 md:py-10 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-24 sm:pb-20">
+    <section
+      style={{
+        backgroundImage: `radial-gradient(circle at 100% 100%, #022937ff, #000000ff)`,
+      }}
+      className="min-h-screen py-6 sm:py-8 md:py-10 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-24 sm:pb-20"
+    >
       <Header />
       <motion.div
         variants={containerVariants}
