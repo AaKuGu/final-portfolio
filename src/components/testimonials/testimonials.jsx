@@ -29,13 +29,13 @@ export function Testimonials() {
             whileHover={{ y: -10, scale: 1.02 }}
             className="group"
           >
-            <motion.div
+            {/* <motion.div
               className="absolute -top-4 -right-4 text-primary/10"
               initial={{ rotate: 0 }}
               whileHover={{ rotate: 12 }}
             >
-              <Quote className="w-32 h-32" />
-            </motion.div>
+              <Quote className="w-32 h-32" /> hallo
+            </motion.div> */}
             <div className="bg-gray-900 border border-gray-700 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 h-full hover:border-gray-700/50 transition-colors relative overflow-hidden">
               <motion.div
                 className="absolute -top-4 -right-4 text-cyan-500/10"

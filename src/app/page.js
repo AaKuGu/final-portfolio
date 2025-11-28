@@ -18,7 +18,7 @@ export default function Portfolio() {
         setActiveSection={setActiveSection}
       />
 
-      <main className="ml-0 md:ml-20">
+      <main className="ml-0 md:ml-20 py-2 ">
         <AnimatePresence mode="wait">
           {activeSection === "hero" && (
             <motion.div

@@ -13,7 +13,7 @@ const MotionButton = motion(Button);
 export function Hero({ setActiveSection }) {
   return (
     <motion.section
-      className="min-h-screen  flex items-center justify-center px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-20 sm:pb-0 "
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 pb-20  sm:pb-0 "
       style={{
         backgroundImage: `radial-gradient(circle at 0.5px 0.5px, rgba(85, 158, 171, 0.2) 2px, transparent 0)`,
         backgroundSize: "20px 20px",
