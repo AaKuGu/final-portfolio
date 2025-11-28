@@ -52,6 +52,7 @@ export function Projects({ setActiveSection }) {
                         As {project.type}
                       </span>
                     </motion.div>
+
                     <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-[5px] md:mb-2">
                       {project.testimonialUrl && (
                         <Button

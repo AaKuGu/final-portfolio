@@ -35,7 +35,7 @@ export const projects = [
     title: "My Productify : Course Launcher App",
     type: "Personal Project || Sold to 10+ users",
     description:
-      "This project helps you launch your own course as a product , unlike udemy , it gives you ability to host your courses on your own domain",
+      "This project lets you launch and sell your own online course as a fully independent product — with your own branding, your own domain, and 100% control — unlike Udemy, where your course lives on their platform and you share revenue with them.",
     tech: [
       "Next.js",
       "MongoDB",
