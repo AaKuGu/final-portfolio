@@ -70,23 +70,25 @@ export function Testimonials() {
                   </div>
                 </div>
 
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs sm:text-sm font-semibold py-2 sm:py-2.5 px-4 rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 flex items-center justify-center gap-2"
-                  onClick={() =>
-                    window.open(testimonial.videoUrl || "#", "_blank")
-                  }
-                >
-                  <svg
-                    className="w-4 h-4"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
+                {testimonial?.videoUrl && (
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs sm:text-sm font-semibold py-2 sm:py-2.5 px-4 rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 flex items-center justify-center gap-2"
+                    onClick={() =>
+                      window.open(testimonial.videoUrl || "#", "_blank")
+                    }
                   >
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                  </svg>
-                  View Video Testimonial
-                </motion.button>
+                    <svg
+                      className="w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                    </svg>
+                    View Video Testimonial
+                  </motion.button>
+                )}
               </div>
             </div>
           </motion.div>
