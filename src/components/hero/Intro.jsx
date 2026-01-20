@@ -37,7 +37,7 @@ const Intro = () => {
           variants={itemVariants}
           className="flex flex-wrap gap-2 sm:gap-3 text-sm sm:text-base text-gray-500 mb-3 sm:mb-4 justify-center sm:justify-start"
         >
-          <span>23 years old</span>
+          <span>24 years old</span>
           <span>•</span>
           <span>LPU 2024 Graduate</span>
           <span className="hidden xs:inline">•</span>
@@ -48,7 +48,7 @@ const Intro = () => {
           variants={itemVariants}
           className="text-base sm:text-lg md:text-xl text-white/90 font-medium mb-1 sm:mb-2"
         >
-          Full 1 Year Experience with Real Clients
+          Full 2 Year Experience with Real Clients
         </motion.p>
         <motion.p
           variants={itemVariants}
